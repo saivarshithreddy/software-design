@@ -1,0 +1,22 @@
+xcanary
+xprocess_application takes an application and no criteria and returns a status of pass and a message "Nothing to check"
+xprocess_application takes an application and employment criteria and returns a status of pass and a message "Applicant has had previous employment"
+xprocess_application takes an application and employment criteria and returns a status of fail and a message "Applicant has no previous employment"
+xprocess_application takes an application, employment criteria, and criminal records criteria, and returns a status of pass and a message "Application has had previous employment. Application has had no criminal records."
+xprocess_application takes an application, employment criteria, and criminal records criteria, and returns a status of fail and a message "Application has no previous employment. Application has had no criminal records."
+xprocess_application takes an application, employment criteria, and criminal records criteria, and returns a status of fail and a message "Application has had previous employment. Application has criminal records."
+
+xemployment criteria passes an applicant
+xemployment criteria fails an applicant
+xcriminal records criteria passes an applicant
+xcriminal records criteria fails an applicant
+xcredit records criteria passes an applicant
+xcredit records criteria fails an applicant
+xsecurity clearance criteria passes an applicant
+xsecurity clearance criteria fails an applicant
+
+xfetch criterion gets the criteria given its name as employment criteria
+xfetch criterion gets the criteria given its name as criminal records criteria
+xfetch criteria returns a list of all available criteria and that includes employment criteria
+xfetch criteria returns a list of all available criteria and that includes criminal records criteria
+

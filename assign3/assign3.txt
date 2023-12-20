@@ -1,0 +1,84 @@
+Assign3: Due 11:59PM CT November 3 [Extended November 10 due to server fiasco]
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+
+
+An airport has IATA code (a three letter string), name, city, state, current temperature in F, and delay (true or false). Write a console program that will accept from the user one of different criteria for sorting multiple airport data and printing to the console. The output should have the airport name in all caps, the other details can be in mixed case, as provided.
+
+The criteria that will be provided by the program are, sort by
+0. Nothing (mo sorting)
+1. IATA code
+2. Name
+3. City,
+4. State
+5. Delay
+6. Temperature
+7. City and Name (if the city is the same then sort by Name)
+
+Write the program such that if we add a new criteria we will have to add new code, but not change any existing files.
+
+Whereas the data may come from different sources in general, we'll assume that the data is present in a separate source code file, the pseudocode for which is given below:
+
+new Airport("IAD", "Dulles Intl", "Washington", "DC", 71, true)
+new Airport("ORD", "O'Hare International", "Chicago", "IL", 62, true)
+new Airport("MDW", "Midway International", "Chicago", "IL", 60, false)
+new Airport("IAH", "George Bush Intercont.", "Houston", "TX", 82, true)
+new Airport("SFO", "San Francisco Intl.", "San Francisco", "CA", 59, false)
+new Airport("LAX", "Los Angeles Intl.", "Los Angeles", "CA", 84, false)
+new Airport("HOU", "Hobby", "Houston", "TX", 80, false)
+
+
+Please bring forward the practices, techniques, and tools you have learned so far. This includes: 
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                                         
+Code coverage
+Continuous integration
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+In this assignment, we have applied the DRY (Don't Repeat Yourself) principle and some of the SOLID principles, namely the Single Responsibility Principle (SRP), Open-Closed Principle (OCP), and Dependency Inversion Principle (DIP). We will discuss each of these principles and where they are employed in this assignment.
+
+OCP: The Open-Closed Principle (OCP) ensures that the code is open for extension and closed for modification. We have utilized the Abstract Factory pattern to generate families of related objects (Sorters) based on critera without specifying their concrete classes. This promotes the OCP by allowing us to add new sorters without modifying the existing sorters or other supporting classes. The Factory class ensures that the appropriate sorter method is called.
+
+SRP: SRP ensures that each class has well-defined functionality. For instance, our sorter classes only return the sorting function, and each function carries out its specific criteria, promoting clarity and organization. The ClassesFetcher class has only one functionality to fetch the sorter classes from the respective package. This promotes high cohesion and ensures that classes only implement methods relevant to their specific responsibilities, preventing unnecessary dependencies and ensuring cleaner, more maintainable code.
+
+DIP: The Dependency Inversion Principle states that we must use abstraction (abstract classes and interfaces) instead of concrete implementations. The AirportsInfoProcessor interface adheres to the Dependency Inversion Principle by depending on abstractions (e.g., Comparator<Airport>) rather than concrete implementations. This allows flexibility in choosing or extending sorting mechanisms.
+
+DRY: This principle ensures that a particular logic appears only once in the codebase, minimizing code duplication. In AirportsInfoProcessor, we have applied this by removing the duplication of logic for converting airport names to uppercase through overloading the processAirports method. This principle is also evident in AirportSorterFetcher, where the same code is used to fetch each sorting function based on criteria, eliminating redundancy.
+
+2. Any interesting lessons you learned in this assignment? Discuss.
+
+We have learned about various design principles and how they can be implemented, along with various concepts of Java.
+
+While writing the code, we found ourselves spending a significant amount of time on it, adding unnecessary things and making it overly complex. Initially, we thought we were creating the best solution. However, as we received feedback to use design principles, we were astonished to realize how much complex and redundant code we were writing. We learned a lot, particularly during the implementation of the SorterFetcher class, where we used the Abstract Factory Pattern. This taught us how to remove redundant code that might have been present if we were using if-else loops or switch statements. Additionally, I learned how to organize code based on functionality (SRP) within a single class, promoting high cohesion and loose coupling.
+
+Although we learnt about Regex Patterns, Comparators, and the Reflection API theoretically in the past, we haven't used them practically. This assignment helped us gain knowledge about using reflections in Java efficiently to support the Abstract Factory pattern and understand how comparators work internally and how we can use them with lambdas. Lastly, I discovered the record class in Java which can be used as Data Transfer Objects.
+
+3. Any surprises or things that you did not expect? Discuss.
+
+The surprises and difficulties I faced during this assignment included using a Comparator as an argument. When calling for no sort, I needed to pass a parameter to an overloaded method. Initially, I used the Comparator.naturalOrder() method, but it forced me to implement Comparable in the Airport class, breaking the Single Responsibility Principle (SRP). I discussed this issue with you and resolved it using a lambda expression. This process consumed a significant amount of time and required thoughtful consideration.
+
+Another challenging scenario arose when creating the abstract factory method. Initially, I was unaware that I could call static methods from reflections. As a result, I implemented various methods that violated the Open-Closed Principle (OCP). It took time for me to research and understand how to use static methods from the classes fetched through reflections.
+
+I also encountered difficulties in obtaining a criteria List from class names in the sorter package. I needed to split them based on camel casing using a regex expression, which indeed provided an opportunity for me to learn about regular expressions.
+
+Lastly the server crash was a big surprise for us.
+
+Total [100]: 99 [A review of the actual commits and not the number of commits shows that one member of the team had (a) much lower number of commits and (b) the commits where not very significant. The student receives a reduced score of 75% of the score earned for this assignment. The score will be much less for the next assignment if substantial improvement in participation is not shown]
+
+Program works as expected [20]:
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]:
+Design for extensibility without code change [20]:
+Code quality [10]:
+
+Response to questions [10]: -1
+Spellcheck

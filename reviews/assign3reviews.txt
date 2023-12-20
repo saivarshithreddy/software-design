@@ -1,0 +1,319 @@
+[Reviewed 11/10/23 07:54 AM CET]
+synopsis: let's write
+
+details: 
+
+Let's write, bring in the details, reflect on the learnings.
+
+By now we should know that we should be writing in short paragraphs for every single part.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/23 04:48 AM CET]
+synopsis: good work so far
+
+details: 
+
+In the build.gradle.kts it would make sense to exclude the ui package instead of each class.
+
+Let's get started on the questions in assign3.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/23 18:46 PM CET]
+synopsis: run task did not run anything
+
+details: 
+
+> ./gradlew run
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/23 15:00 PM CET]
+synopsis~: red or yellow in code coverage
+
+details:
+
+Please take a look at the code coverage and make sure the coverage shows 100%.
+After fixing the coverage (or ask for help if you need), please ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/23 11:46 AM CET]
+synopsis~: red or yellow in code coverage
+
+details:
+
+Please take a look at the code coverage and make sure the coverage shows 100%.
+After fixing the coverage (or ask for help if you need), please ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/23 08:00 AM CET]
+synopsis: good so far
+
+details: 
+
+Good work so far. Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/23 06:42 AM CET]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/08/23 09:45 AM EET]
+synopsis: good so far
+
+details: 
+
+Good so far. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/23 12:28 PM EET]
+synopsis: a fix
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/23 22:35 PM EET]
+synopsis: good so far
+
+details: 
+
+Good so far. Let's move forward. Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/23 05:55 AM EET]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/23 05:06 AM EET]
+synopsis~: a pile of text is uninviting to the reader
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/23 17:48 PM EET]
+synopsis: SRP and OCP
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/23 01:24 AM MDT]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/23 00:27 AM MDT]
+synopsis: let's change direction
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/23 15:50 PM MDT]
+synopsis~: red or yellow in code coverage
+
+details:
+
+Please take a look at the code coverage and make sure the coverage shows 100%.
+After fixing the coverage (or ask for help if you need), please ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/04/23 06:21 AM MDT]
+synopsis: next step
+
+details: 
+
+Let's move forward to the next small step.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/23 16:11 PM MDT]
+synopsis: good so far
+
+details: 
+
+Good so far. Let's move forward to the next test.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/23 04:34 AM MDT]
+synopsis: let's think of the file location
+
+details: 
+
+Right now the sorter java files are present in the same directory as the Airport.java and AirportsInfoProcessor.java. This is going to get really messy when we have more files. Should we consider a separate directory for the sorters?
+
+Please see suggestions in files.
+
+Let's move forward to the next few tests.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/23 00:04 AM EET]
+synopsis: let's simplify
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/23 09:34 AM EET]
+synopsis: SRP and OCP
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/23 06:46 AM EET]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/23 04:34 AM EET]
+synopsis: let's move forward to the next step
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/23 17:50 PM EET]
+synopsis: SRP
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/23 10:43 AM EET]
+synopsis: let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/23 06:44 AM EET]
+synopsis~: next step
+
+details: 
+
+Next step.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/23 03:53 AM EET]
+synopsis~: let's tweak this a bit towards where we want to go
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/23 18:45 PM EET]
+synopsis: let us evolve the design.
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/23 11:13 AM EET]
+synopsis: lets take the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 10/29/23 09:15 AM EET]
+synopsis~: let's remove unnecessary code
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/23 16:48 PM EEST]
+synopsis: let's take a smaller next step
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/23 18:28 PM EEST]
+synopsis: good so far
+
+details: 
+
+Good so far. Let's take the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/23 23:48 PM IST]
+synopsis: SRP violation
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/23 13:16 PM IST]
+synopsis: SRP
+
+details: 
+
+Please see suggestions in files.
+
+Please take one step at a time. Write a lot, delete a lot. I will let you know very clearly when it is time to move to the next tests.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/23 19:34 PM CDT]
+synopsis: let's keep an eye on the requirements
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/23 10:47 AM MDT]
+synopsis~: let's focus on an action or behavior instead of state
+
+details: 
+
+Please see suggestions in files.
+
+Let's focus on an action or behavior instead of state.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------

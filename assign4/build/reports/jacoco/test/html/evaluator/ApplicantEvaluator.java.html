@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ApplicantEvaluator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JobApplicantEvaluator</a> &gt; <a href="index.source.html" class="el_package">evaluator</a> &gt; <span class="el_source">ApplicantEvaluator.java</span></div><h1>ApplicantEvaluator.java</h1><pre class="source lang-java linenums">package evaluator;
+
+import java.util.function.Function;
+import java.util.stream.Stream;
+
+public interface ApplicantEvaluator {
+
+  @SafeVarargs
+  static EvaluationResult processApplication(Application application, Function&lt;Application, EvaluationResult&gt;... evaluationFunctions) {
+
+<span class="fc" id="L11">    return Stream.of(evaluationFunctions)</span>
+<span class="fc" id="L12">        .map(evaluator -&gt; evaluator.apply(application))</span>
+<span class="fc" id="L13">        .reduce(ApplicantEvaluator::mergingTwoEvaluations)</span>
+<span class="fc" id="L14">        .orElse(new EvaluationResult(CriteriaStatus.PASS, &quot;Nothing to Check&quot;));</span>
+  }
+
+  private static EvaluationResult mergingTwoEvaluations(EvaluationResult evaluationResult1, EvaluationResult evaluationResult2) {
+<span class="fc" id="L18">    String mergedMessage = String.format(&quot;%s %s&quot;, evaluationResult1.message(), evaluationResult2.message());</span>
+
+<span class="fc bfc" id="L20" title="All 4 branches covered.">    EvaluationResult evaluationResult = evaluationResult1.status() == CriteriaStatus.PASS &amp;&amp; evaluationResult2.status() == CriteriaStatus.PASS ?</span>
+<span class="fc" id="L21">        new EvaluationResult(CriteriaStatus.PASS, mergedMessage) : new EvaluationResult(CriteriaStatus.FAIL, mergedMessage);</span>
+
+<span class="fc" id="L23">    return evaluationResult;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

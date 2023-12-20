@@ -1,0 +1,44 @@
+[Reviewed 09/07/23 07:15 AM CEST]
+synopsis: let's restructure, write, bring in details and depth
+
+details: 
+
+Lot of code with no related discussion is of no use. We can remove all the code and provide concise examples in words instead.
+
+1.
+
+Let's start with one paragraph that provides context or details.
+
+Then, one short paragraph each for a consequence or a benefit. State the consequence or the benefit and then one or two sentences to support that or bring in more detail about that consequence or benefit.
+
+We can remove the code examples from here and instead state in one of two sentences in the first paragraph what high vs. low cohesion means.
+
+Please structure as definition or context in one paragraph. Then multiple paragraphs wth each focusing on one consequence or benefit.
+
+2.
+
+"Tight coupling is a concept where modules are strongly interdependent." That is cyclic dependency, let us focus on tight vs. loose.
+
+No need for code example here. Instead in the first paragraph let us define what tight vs. loose is in one sentence. Then in a second sentence give a crisp example to illustrate tight. vs. loose coupling.
+
+Then, multiple short paragraphs with one consequence or benefit per paragraph. Support with details in a second or third sentence in each paragraph.
+
+3.
+
+"classes.In" space after . please.
+
+No need for a code example.
+
+One short paragraph, tell us what this is, provide context.
+
+Then, multiple short paragraphs, with each paragraph focusing on one consequence. State, support with details.
+
+4.
+
+No need for a code example.
+
+One short paragraph, tell us what this is, provide context.
+
+Then, multiple short paragraphs, with each paragraph focusing on one consequence. State, support with details.
+
+------------------------------------------------------------------------------

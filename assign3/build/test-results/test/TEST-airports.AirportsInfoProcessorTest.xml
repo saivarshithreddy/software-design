@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="airports.AirportsInfoProcessorTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-11-09T18:34:43" hostname="saivarshith" time="0.043">
+  <properties/>
+  <testcase name="sortAirportsByTemperature()" classname="airports.AirportsInfoProcessorTest" time="0.021"/>
+  <testcase name="getEmptyAirportsList()" classname="airports.AirportsInfoProcessorTest" time="0.002"/>
+  <testcase name="canary()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="checkAirportsListForTwoAirportNameInCaps()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="sortAirportsByCityAndName()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="checkAirportsListForOneAirportNameInCaps()" classname="airports.AirportsInfoProcessorTest" time="0.0"/>
+  <testcase name="sortAirportsByCity()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="sortAirportsByname()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="sortAirportsByDelay()" classname="airports.AirportsInfoProcessorTest" time="0.001"/>
+  <testcase name="sortAirportsByState()" classname="airports.AirportsInfoProcessorTest" time="0.002"/>
+  <testcase name="sortAirPortListByIATACode()" classname="airports.AirportsInfoProcessorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

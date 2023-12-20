@@ -1,0 +1,56 @@
+[Reviewed 09/14/23 18:00 PM CEST]
+synopsis: let's revisit the design
+
+details: 
+
+Diagram:
+
+We need a good separation of the GUI from the logic.
+
+We need to represent the input colors and the output colors (Silver, etc.).
+
+Using shaded diamond (composition) is not a good idea at this level compared to the unshaded diamond (aggregation).
+
+What do the dotted lines mean? Instead use proper UML notation for association or aggregation.
+
+Please show cardinality only if different from the default value of 1.
+
+Text:
+
+1.
+
+This will have to change based on the change to the diagram.
+
+2.
+
+Good
+
+3.
+
+Good
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/23 14:06 PM CEST]
+synopsis: let's rework the diagram and bring in the details
+
+details: 
+
+Diagram:
+
+Let's delete the activity diagram. Let us instead how a UML class diagram.
+
+Text:
+
+1.
+
+Please see suggestions in files.
+
+2.
+
+Many other languages have the capabilities mentioned, why choose this one in particular?
+
+3.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,38 @@
+HW3 Due 11:59PM October 20
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. What are the 3Cs of User Stories?
+
+The phrase “3 Cs of User Stories” is a memory aid that helps us remember a user story’s three progressive elaboration phases. Each of the three Cs stand for Card, Conversation, and Confirmation. The 3Cs resolve a lot of the conventional pain points such as "Lack of requirements", "Lack of context for requirements", "Lack of understanding of business rules" and "Teams building the wrong thing". Each term in the 3Cs are elaborated below:
+
+Card:
+
+User stories are typically written on cards, whether they are electronic cards within a system or physical notes. What's more important than the medium used for these cards is the concept they convey. The collection of user stories comprises the product backlog. However, not all cards need to have fully formed user stories on them for progress to be made. The most critical items can be developed, while less critical functionality can be deferred until later. Cards can be moved around to clearly indicate priority, which encourages teams to eliminate unnecessary items.
+
+Conversation:
+
+A user story is not a detailed specification of something that must be be built; it's a statement of a need that should be fulfilled. The conversation transforms this placeholder into a deliverable solution. This phase may include additional elements, such as initial user research, design work, and brainstorming. It's more accurate to think of the conversation as a form of collaboration. This phase involves dynamic exchanges of ideas, discussions, and problem-solving among team members, including developers, product owners, designers, and end-users. It's not limited to writing code; it's about ensuring that the team comprehends the user's perspective and the desired outcome.
+
+Confirmation:
+
+Confirmation refers to the full satisfaction of the user story. The team should meet every criterion and functionality that the user desires in the product. This stage ensures that the user's expected value and functionality are met. 
+
+By focusing on these 3Cs, agile developers can understand and test user stories effectively. This also enhances communication and collaboration throughout the software development process.
+
+2.Provide examples of where we used each of the 3Cs in this class.
+  
+Cards:
+
+In this class, while working on assignments, we were provided with a set of user stories, which represented the tasks to be completed. Although we did not use physical or digital cards, the user stories were documented in an assignment text document. These user stories were prioritized to guide our development process. For example, in Assignment 2, the user stories included tasks such as reading a file, processing text, calling an API, and developing a Console UI. These cards were prioritized in the order in which we initially wrote code for processing a text file, then focused on verifying word correctness. After that, we wrote code for retrieving the text from various sources like files, and finally, we addressed the console UI.
+
+Conversation:
+
+During the assignments, we engaged in discussions and conversations with the professor and peer about specific user stories. For example, we sought clarification on whether we should highlight the wrong word with '[word]' as indicated in the user story, and how to handle cases where the API returned an error for a word. Furthermore, the continuous feedback cycle we experienced with the professor and discussing with peer about the feedback and next tasks, along with the corresponding code changes, serves as an example of ongoing conversation.
+
+Confirmation:
+
+In our class, confirmations can be effectively considered in Review for assignments. The professor validated that the functionality aligned with the requirements outlined in the user story (as described in 'assign2.txt'), and the acceptance criteria were met, as discussed in the Conversation stage (as specified in 'test.txt'). For instance, in Assignment 2, the confirmation stage was reached for a user story during the professor's review of the 'process text' functionality, which confirmed our readiness to move on to the next user story according to priority. The review ensured that the functionality met the tests (defined as acceptance criteria) specified in the 'test.txt' document for this particular user story.
+
+Total [10]: 10

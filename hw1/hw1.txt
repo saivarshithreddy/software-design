@@ -1,0 +1,125 @@
+Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If you do not check in, you will not receive any scores. When pairing please switch who checks in so there is significant number of check in from each of you.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+You are still responsible to successfully complete an homework or assignment even if your pair is a no-show. You can request to change pairs at any time and if there is another person in the class willing to pair with you we can make the switch.
+
+A lot of help will be provided in this course, but you have to start early and ask for help along the way.                                          
+
+Please read the academic honesty policy posted on the course mailing list.                   
+
+The above details apply to all homework and assignments in this course.                   
+
+Now to homework #1.
+==============================================================================
+HW1: Due 11:59PM CT September 8
+
+Good design should have high cohesion and both loose and low coupling.
+Discuss the following:
+
+1. What are the consequences of having low cohesions? What are the benefits of high cohesion.
+
+	Cohesion describes the degree to which elements within a module and how well these elements combined achieve specific functionality. Low cohesion involves combining code without proper relationships in classes or methods, irrespective of functionality. On the other hand, high cohesion is a concept in which related functionalities of a specific entity are grouped logically.
+
+	Low cohesion has various consequences on the codebase. There are difficulties in terms of maintainability and complexity. Developers may find it challenging to enhance or change the code concerning new features due to the lack of proper logical organization of responsibilities. Additionally, code reusability is hindered as methods within a class become more dependent on unrelated functionalities, including variables and methods, due to the absence of separation. Changes in one element of a module can even cause issues in others in the same module.
+
+	Whereas in High cohesion, each module has well-defined boundaries and responsibilities regarding functionality, allowing developers to find and debug bugs in a module efficiently. The code is organized based on relatedness, making it easier to maintain, reducing complexity, promoting reusability, and simplifying testing.
+
+	Additionally, High cohesion enhances the reusability of code. When a module has all the elements closely related to a specific task without unrelated elements used in it, It can be reused in various modules in the project, which promotes code reliability and consistency. When modules are in high cohesion, it promotes parallel development where different developers can work on the different modules without worrying about other's work. This promotes accelerated development in huge software systems.
+
+	For instance, I have a UHUserEntinty class, which I am using to store professor's information, and I am using the same class to perform CRUD operations for students and professors. I am also generating the payroll for professors in the same class and providing student fee transactions and receipts in the same class. This leads to confusion, as these responsibilities have different purposes and may change independently. So, we can divide the functionality based on the CRUD operation of Users in one class and create students and professors individually by providing only their set of functions. This even decreased the object size and improved memory consumption and performance.
+
+
+-------------------------------------------------------------------------
+
+2. What are the consequences of tight coupling instead of loose coupling?
+
+	Couping tells about the degree of interconnectedness between different modules. It tells how extensively one module of an application relies on other modules. Tight coupling is a concept where modules have strong dependencies on each other. Whereas loose coupling refers to the concept where modules in a codebase have minimal dependencies on each other.
+ 
+Flexibility: In tight coupling, changes in one module significantly impact other modules as it might be used in multiple other modules, making it rigid in terms of flexibility, so modifying code with respective new requirements becomes very difficult. On the other hand, loose coupling provides flexibility when adapting code to new requirements and promotes reusability.
+
+Maintenance: In tight coupling, interactive modules are difficult to understand and maintain. When any changes are required, the developer must navigate through all the incoming dependent modules, which is more complex, time-consuming and error-prone. In loose coupling, each module interacts less with others, reducing the time to debug an issue or understand a module. 
+
+
+Testing: Testing a tightly coupled is complicated as mocking or stubbing of other dependencies by understanding their functionality becomes difficult. Whereas in loose coupling, testing is simpler as it does not depend on the modules, and we can focus on the functionality of the module they are working in, so writing test cases becomes easier.
+
+Reusability: In tight coupling, the dependencies make it harder to adapt functionality for reuse as the module often requires bringing along other interconnected modules, resulting in a larger and more complex codebase, and loose coupling makes it easier to extract and reuse individual components or modules.
+
+Abstraction: In terms of abstraction, a tightly coupled module shares data elements and implementations unnecessarily with the dependent module, as loose coupling interfaces hide the implementation.
+
+
+-------------------------------------------------------------------------------------------------
+3. What are the consequences of a piece of code having a large number of dependencies (outgoing)?
+
+The dependencies are functionalities or variables of a module or class indirectly related to code in other classes.For example,consider a class Student that relies on the Class UniversityEmail,the class Student is dependent on email address present in UniversityEmail.So below we are discussing the consequences of the code present in class UniversityEmail.
+
+Consequences on a code having outgoing dependencies:
+
+1. The greater number of outgoing dependencies makes code difficult to understand for the user,it becomes confusing to keep all relations and interactions between classes in mind.
+
+2. The maintenance of code becomes more challenging to the developer on future requirements of the company or client,if changing the class A, the developer needs to also change the other dependent classes,otherwise, it leads to bugs.
+
+3. The usability of the code decreases as classes are tightly coupled to each other.So it becomes difficult to use code in context-related places(where the variables or function help in other classes).
+
+4. While testing the code having many outgoing dependencies,it will be more challenging to consider all dependencies in the unit tests.
+
+5. The run time for the program becomes slower,it needs to check the checking things from other parts of the code(even the computational cost increases).
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. What are the consequences of a large number of dependencies on a piece of code (incoming)?
+
+The dependencies are functionalities or variables of a module or class indirectly related to code in other classes. For example, consider a class Walmartcontrol relies on Class DatabaseConnector, class Checksdatabase, class Calculatingprice, and class Item.So below,we are discussing the consequences of the code present in class Walmartcontrol. 
+
+Consequences on a code having incoming dependencies:
+
+positive consequences:
+
+1. This will help to expand the functionality of your code by providing access to libraries,frameworks and tools.
+
+2. The code having more incoming dependencies will be more efficient and well-managed,as this will help for developer to make changes.
+
+negative consequences:
+
+1. The code becomes less stable as there are more number of dependencies.
+
+2. if it goes with significant changes and updates, this makes it challenging to manage and prioritize tasks.
+
+3. If the developer changes a code in a specific class it will affect the various other components of the code,so refactoring becomes difficult and flexibility decreases.
+
+4. it also becomes complicated while testing and debugging the code,modifications to the code can require regression testing of all related components.
+
+
+Total [10]: -5
+
+Need to spellcheck
+
+1.
+
+Need to dive in to more depth for consequences related to fragility and also testing.
+
+2.
+
+"making it rigid in terms of flexibility," is it rigidity or fragility?
+
+3.
+
+Need space after , and also after period.
+
+Please see requestReview.txt: "-have you used short paragraph instead of a bullet list of items?"
+
+Need to bring in fragility and more depth to why testing is hard.
+
+4.
+
+Need space after , and also after period.
+
+Please see requestReview.txt: "-have you used short paragraph instead of a bullet list of items?"
+
+Need to bring in rigidity into the discussion and provide more depth.

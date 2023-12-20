@@ -1,0 +1,65 @@
+Assign4: Due 11:59PM CT December 1
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+
+Using test first development, write the program described below.
+
+An agency specializes in evaluating job applicants. Different clients using their service will want applicants to be evaluated based on different criteria. New criteria not known today may be added in the future. Some existing criteria may also be removed at any time. Not all available criteria will be used by every client.
+
+Examples of criteria are employment status, criminal records, credit records, Security clearance, etc. For example, the employment status criterion will return a response of its evaluation with a status and reason, like so: pass, "applicant has had previous employment." As another example, the criminal records criterion may respond fail, "person has done time for bank robbery."
+
+For the purpose of this assignment, we will fake some response in each of the criteria when an evaluation is requested for applicants.
+
+Write a console application that will allow the user of the program to first choose the criteria they want to use, from a dynamic list of available criteria. Then evaluate the application for all the selected criteria. Finally the program will print the total result, pass or fail (pass only if all criteria passed) and provide a summary of the evaluations for that applicant. 
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+In this assignment, we applied design principles such as YAGNI (You Ain't Gonna Need It) and DRY (Don't Repeat Yourself), along with some of the SOLID principles—namely, the Single Responsibility Principle (SRP), Open-Closed Principle (OCP), and Dependency Inversion Principle (DIP). Let's discuss how each of these principles is employed in the assignment.
+
+OCP (Open-Closed Principle):
+The Open-Closed Principle ensures that the code is open for extension and closed for modification. To adhere to this principle, we utilized the Abstract Factory pattern along with the decorator pattern. This combination allows the generation of families of related objects (Criterias) based on criteria names without specifying their concrete classes. These related objects are then passed to a decorator to process each criterion recursively on the application. This promotes OCP by enabling the addition of new criteria without modifying existing criteria or other supporting classes for processing applicants.
+
+SRP (Single Responsibility Principle):
+The Single Responsibility Principle ensures that each class has well-defined functionality. In our implementation, each criteria class only contains the evaluate function, where each function carries out a specific criterion. This approach promotes clarity and organization. Similarly, the Application and EvaluationResult record classes have the sole responsibility of storing data. The ClassesFetcher class only has one functionality: fetching criteria classes from the respective package. This adherence to SRP promotes high cohesion, ensuring that classes implement methods relevant to their specific responsibilities, preventing unnecessary dependencies and ensuring cleaner, more maintainable code.
+
+DIP (Dependency Inversion Principle):
+The Dependency Inversion Principle states that we must use abstractions (abstract classes and interfaces) instead of concrete implementations. The ApplicantEvaluator interface adheres to the Dependency Inversion Principle by depending on abstractions (e.g., Function<Application, EvaluationResult>) rather than concrete implementations. This approach allows flexibility in choosing or extending criteria.
+
+DRY (Don't Repeat Yourself):
+The DRY principle ensures that a particular logic appears only once in the codebase, minimizing code duplication. In ApplicantEvaluator, we applied this by removing the duplication of logic for processing the application when no criteria are sent with varargs, despite using another overloaded method with no criteria in parameters. This principle is also evident in CriteriasFetcher, where the same code is used to fetch each criteria function based on criteria name, eliminating redundancy.
+
+YAGNI (You Ain't Gonna Need It):
+This principle advises against adding functionality or complexity until it's necessary for current requirements. At every stage of the assignment, we added only the code required for the provided test to pass, avoiding unnecessary complexity until it's needed for future use cases. 
+
+2. Any surprises or things that you did not expect?
+
+There were many aspects of this assignment related to design patterns and Java features that we didn't anticipate.
+
+Initially, we faced confusion about which design pattern to use and ultimately decided on the Decorator pattern. In the beginning, we considered using the reduce function along with a BiFunction that takes Application and EvaluationResult as parameters. However, this approach led to a violation of the Single Responsibility Principle (SRP) in the evaluateCriteria method. Overcoming this challenge, I devised a solution to map the EvaluationResult of each criterion and then reduce them into a single EvaluationResult.
+
+One more thing which I didn't expect was the transformation of the reflection method into a Function, about which I had no prior knowledge. I even emailed you regarding this, and surprisingly, I didn't expect that doing it would be so easy by calling the method.invoke in a lambda function.
+
+3. What design patterns did you use in this assignment? Discuss.
+
+In this assignment, we employed the Abstract Factory Pattern along with the Decorator Pattern to enhance the structure and flexibility of the codebase.
+
+Similar to the previous assignment, we utilized the Abstract Factory Pattern, but this time we combined it with the Decorator Pattern. In this scenario, the CriteriasFetcher class serves as an abstract factory. When a criteria name is passed, the function of the respective criteria is returned. This function is then employed in the Decorator Pattern. This approach enhances flexibility by allowing the system to work with different types of criteria without altering the core processing logic.
+
+We leveraged the Decorator design pattern using Lambdas. The Decorator pattern enables us to structure our business logic into layers, creating a decorator for each layer. Objects can be composed with various combinations of this logic at runtime. The client code can treat all these objects in the same way since they all follow a common interface.
+
+For building the decorator, we used the Function interface with Lambda expressions. We employed the map function to collect the evaluation results for each criteria and then used reduce to aggregate the results into a final result. By incorporating lambda expressions, we implemented the Decorator pattern more concisely and flexibly. This method allows the addition of new behaviors to operations dynamically at runtime without altering the operations themselves. This proves particularly advantageous when dealing with the creation of intricate transformations composed of several simple ones.
+
+Total [100]: 100
+Program works as expected [20]:
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]:
+Design for extensibility without code change (DRY + OCP) [20]:
+Code quality [10]:
+Response to questions [10]:
+

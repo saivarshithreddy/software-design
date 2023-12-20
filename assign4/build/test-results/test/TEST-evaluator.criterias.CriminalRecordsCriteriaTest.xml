@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluator.criterias.CriminalRecordsCriteriaTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T07:11:19" hostname="saivarshith" time="0.002">
+  <properties/>
+  <testcase name="evaluateCriteriaPassesWhenNoCriminalHistory()" classname="evaluator.criterias.CriminalRecordsCriteriaTest" time="0.001"/>
+  <testcase name="evaluateCriteriaFailsWhenCriminalHistory()" classname="evaluator.criterias.CriminalRecordsCriteriaTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

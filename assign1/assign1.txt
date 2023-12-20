@@ -1,0 +1,50 @@
+Assign1: Due 11:59PM CT September 29
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+Using Test First Development (no code without test first) let's implement the problem designed in hw2. Feel free to evolve that design and use judgment to make changes based on the improved understanding and learning. You are not required to use any of the design idea or languages you mentioned in hw2, apply decisions based on your renewed learnings.
+
+Please take small steps and ask for frequent reviews.
+
+First start with a tests list (tests.txt) and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) let's answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+In this assignment, we were guided to enhance our ability to contemplate edge test cases, which are often overlooked when writing code for projects. Additionally, we have learned how to write more efficient code by eliminating unnecessary portions from our methods.
+
+2. How is the current design different, if at all, from the strategic design created in hw2?
+
+The Strategic Design serves as the foundation for the project outline. However, as we began coding, we had to make changes based on factors like budget constraints, time limitations, and evolving requirements. The initial strategic design didn't delve deeply into technical aspects, so we needed to carefully consider the logic before writing methods. In contrast, the complete project design places greater emphasis on enhancing the UI/UX. It benefits from user testing and usability studies, leading to improved user interfaces and interactions
+
+3. Were there any surprises or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+In the project, I have used Java Collectors class from the java.util.stream package, along with IntStream.
+
+Total [100]: 75
+
+Program runs [10]:
+Game works as expected [10]: -3
+User needs to be able to change the selection
+The output is hard to read
+Need a better way to interact with the game.
+
+All tests pass [20]:
+Test quality [15]:
+
+Test for randomness [5]: -5
+Need to explore the use of seed to make sure consecutive calls do not return same value.
+
+Code coverage [10]: -5
+
+Code quality [10]:
+
+Design quality [10]: -5
+Unnecessary effort into creating Result class - instead of using a record.
+Implementing equals (which is not necessary) without the also required hashCode method.
+Too many methods in the Mastermind class.
+
+Response to questions [10]: -7
+Need depth, also need to write in short multiple paragraphs for each section (please see the reminder email).

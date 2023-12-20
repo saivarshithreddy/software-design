@@ -1,0 +1,32 @@
+xcanary
+xprocess airportsInfoProcessor takes an empty list and returns an empty list
+xprocess airportsInfoProcessor takes a single record in the list and converts the name to uppercase
+xprocess airportsInfoProcessor takes two records in the list and converts the name to uppercase for both
+xprocess airportsInfoProcessor takes two records in the list and sorts them by IATA Code when sort is required
+xprocess airportsInfoProcessor takes three records in the list and sorts by name
+xprocess airportsInfoProcessor takes three records in the list and sorts by city
+xprocess airportsInfoProcessor takes three records in the list and sorts by state
+xprocess airportsInfoProcessor takes three records in the list and sorts by delay
+xprocess airportsInfoProcessor takes three records in the list and sorts by temperature
+xprocess airportsInfoProcessor takes three records in the list and sorts by city and name
+xgiven a property "name", fetch-a-sorter returns the appropriate sort function
+xgiven a property "city", fetch-a-asorter returns the appropriate sort function
+xgiven a property "city and name", fetch-a-sorter returns the appropriate sort function
+xfetch a list of sort criteria (like name, city, etc.) and verify that list contains "name"
+xfetch a list of sort criteria (like name, city, etc.) and verify that list contains "city"
+xfetch a list of sort criteria (like name, city, etc.) and verify that list contains "city and name"
+
+
+xLet's create a file named AirportsData that contains a function fetchAirports() that returns a list of Airports (please use the list provided in assign3.txt).
+This simulates the data fetch and we don't have to care about where this data is coming from - a database, remote webservice, a microservice, etc.
+
+xLet us now design a main console program that will list the available criteria to the user (including no sort). Ask them to pick one. Once the user picks one
+sort option, display the result of the airports given by the fetchAirports() function, sorted using the user selected criteria, and airport names converted to uppercase.
+
+Let us exclude main from coverage.
+
+Configure build so that when run by default it runs the tests.
+When a run task is executed, it runs the main with the third listed criteria.
+The run task should not wait for any user input, instead run automatically for the third listed criteria.
+We can accomplish this by doing something like this in the run task:  command to run the program < input.txt
+where input.txt can contain the sort option we want to pass on to the program.

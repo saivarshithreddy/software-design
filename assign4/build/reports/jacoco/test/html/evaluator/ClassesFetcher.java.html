@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ClassesFetcher.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JobApplicantEvaluator</a> &gt; <a href="index.source.html" class="el_package">evaluator</a> &gt; <span class="el_source">ClassesFetcher.java</span></div><h1>ClassesFetcher.java</h1><pre class="source lang-java linenums">package evaluator;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.List;
+
+public interface ClassesFetcher {
+
+  static List&lt;String&gt; getClassesInPackage(String packageName) throws IOException {
+<span class="fc" id="L12">    try (InputStream stream = ClassLoader.getSystemClassLoader()</span>
+<span class="fc" id="L13">        .getResourceAsStream(packageName.replaceAll(&quot;[.]&quot;, &quot;/&quot;));</span>
+<span class="fc" id="L14">         BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {</span>
+
+<span class="fc" id="L16">      return reader.lines()</span>
+<span class="fc" id="L17">          .filter(line -&gt; line.endsWith(&quot;.class&quot;))</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">          .filter(line -&gt; !line.endsWith(&quot;Test.class&quot;))</span>
+<span class="fc" id="L19">          .map(line -&gt; line.substring(0, line.lastIndexOf('.')))</span>
+<span class="fc" id="L20">          .toList();</span>
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

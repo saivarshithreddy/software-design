@@ -1,0 +1,59 @@
+HW4 Due 11:59PM December 8
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call out something specific to yourself different from your team member. Bring out your learnings and reflect on them here.
+
+Please remember to write in multiple short paragraphs. Bring out as much details and depth as you can, to reflect on your learnings and insights.
+
+1. What did you essentially learn in this course about design?
+                                
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+Name : Sai Varshith Reddy Bonala
+
+The software design course introduced Object-Oriented Programming (OOP) concepts, covering coupling, cohesion, and fundamental principles such as the Single Responsibility Principle (SRP), Open-Closed Principle (OCP), Dependency Inversion Principle (DIP), and Don't Repeat Yourself (DRY). These principles served as guidelines for crafting functional and efficient code in our assignments.
+
+The course also delved into design patterns, including the Abstract Factory Pattern and the Decorator Pattern, providing tools for creating structured and elegant solutions to common problems. Emphasis was placed on the practical application of the "You Ain't Gonna Need It" (YAGNI) principle, encouraging a focused and efficient approach to coding.
+
+Advanced Java features like lambda expressions and the Reflection API were explored as practical tools for creating intricate designs in the codebase. Test-Driven Development (TDD) was introduced as a methodical approach to creating effective tests with attention to dependencies.
+
+The study of Creational patterns like Composite Method, Cascade Method, Abstract Factory, Factory Method, Prototype, Singleton, and Builder, along with Structural patterns like Adapter, Facade, Proxy, Bridge, Composite, Decorator, and Iterator, provided a comprehensive understanding of their application in real-world scenarios.
+
+In completing my assignments, I effectively employed the 'gradlew' tool to streamline the testing process and evaluate code coverage. This allowed me to ensure the reliability of my code and verify its effectiveness through a comprehensive testing process.
+
+The course also emphasized teamwork, with collaborative coding sessions and feedback playing a significant role. There were instances of coding together and sharing thoughts. Effective communication, documentation, and providing clear answers were highlighted as crucial components in understanding how to design software.
+
+
+Name : Venkata Naga Sai Jayaram Kruthik Kalyanam
+
+Throughout my learning journey, I've gained a comprehensive understanding of various software design concepts, starting from the foundational principles of language capabilities to advanced topics like Design Patterns. The exploration began with crucial concepts such as cohesion and coupling, forming the bedrock for design principles. The overarching goal was to achieve low coupling and high cohesion, guiding us through different principles and patterns.
+
+Moving on, I delved into Object-Oriented Programming (OOP) concepts like Abstraction, Inheritance, Polymorphism, and Encapsulation. This deep dive provided insights into their operations, underlying reasons, and when to apply them in different scenarios.
+
+Test-Driven Development (TDD) became a significant focus, unraveling its benefits and teaching the process of crafting effective tests, considering dependencies. Concepts like mocking and code coverage using the Jacoco plugin were also covered.
+
+The exploration extended to basic design principles like YAGNI, SLAP, and DRY, followed by an in-depth study of SOLID principles (SRP, OCP, LSP, ISP, DIP), which were efficiently applied in practical assignments.
+
+The journey progressed to Creational patterns (Composite Method, Cascade Method, Abstract Factory, Factory Method, Prototype, Singleton, Builder) and Structural patterns (Adapter, Facade, Proxy, Bridge, Composite, Decorator, Iterator). Practical application of these patterns, such as combining Abstract Factory and Decorator, provided valuable hands-on experience.
+
+Beyond the technical aspects, the course significantly enhanced my teamwork skills. Collaborative code writing with feedback from peers and professors broadened my perspective on coding. Emphasis on discussions, documentation, and structured answer writing contributed to a holistic understanding of the software design process.
+ 
+2. What are some of the general guidelines you would follow when designing?
+
+When designing software, several crucial steps must be considered. These encompass creating the project outline through the collection of user stories, iteratively refining the design based on feedback from managers and peers, selecting the appropriate programming language according to its capabilities, applying appropriate design principles and patterns, responsibly managing variables and resources by closing them when not in use, and ensuring the code remains simple.
+
+The initial step in designing a project involves creating its outline. This essentially consists of strategic and tactical design. Strategic design encompasses defining the functionality of classes and the relationships between them, constituting a high-level design. Tactical design, on the other hand, focuses on variables, methods, and parameters, forming a low-level design.
+
+The subsequent step involves Test-Driven Development (TDD), wherein tests are written based on the requirements for the code to be developed. This ensures that the code meets the specified requirements and doesn't go off track when modifications or new features are added.
+
+During the coding phase, adherence to design principles is essential. These principles include YAGNI (You Aren't Gonna Need It), emphasizing writing code that is currently necessary and avoiding unnecessary features. Another important principle is SLAP, which asserts that every piece of code should be on the same level of abstraction. Other fundamental principles, such as Don't Repeat Yourself (DRY), advocate for simplicity and avoiding redundancy. SOLID principles further guide the development process, aiming to create a codebase that is not only functional but also easy to understand and scalable over time.
+
+Choosing the appropriate design pattern is critical, as various design patterns serve different cases. Selecting the right pattern enhances the maintainability of the codebase and facilitates the addition of new features without modifying existing code.
+
+The preference for using interfaces over relying on concrete classes is advocated, as it diminishes both outgoing and incoming dependencies. This approach not only makes the code less rigid but also contributes to enhanced code scalability and maintainability.. Proper variable usage, creating objects only when necessary, and closing resources like Scanner and FileWriter when no longer needed are additional practices to ensure a robust and efficient codebase.
+
+Total [10]: 10

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluator.criterias.SecurityClearanceCriteriaTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T07:11:19" hostname="saivarshith" time="0.001">
+  <properties/>
+  <testcase name="evaluateCriteriaFailsWhenClearanceIsDenied()" classname="evaluator.criterias.SecurityClearanceCriteriaTest" time="0.0"/>
+  <testcase name="evaluateCriteriaPassesWhenClearanceIsGranted()" classname="evaluator.criterias.SecurityClearanceCriteriaTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
